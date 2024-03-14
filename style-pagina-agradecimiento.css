@@ -1,0 +1,48 @@
+/*Ponemos el color de fondo de la página*/
+*{
+    background-color: black;
+    color: white;}
+/*Personalizamos el logo y cabeza de pagina(tamaño del logo, color de fondo,...*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+    color: white;
+}
+h1{
+    background-color: purple;
+}
+#logo{
+    width: 100px;
+}
+/*Personalizamos el texto(tamaño y posición*/
+p{
+    text-align: center;
+    font-size: 50px;
+}
+/*Lo anterior es para el formato movil, usamos el término @media para definir el tamaño a un tamaño de ordenador*/
+@media (min-width: 1024px){
+    /*personalizo de la misma manera que antes todo pero adaptado a un formato mayor*/
+    *{
+        background-color: black;
+        color: white;}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: purple;
+        color: white; /*color de texto*/
+        font-size: 30px; /*tamaño de letra*/
+        font-family: 'Dancing Script', cursive; /*tipo de letra*/
+    }
+    #logo{
+        height: 170px;
+        width: 200px;
+    }
+    p{
+        text-align: center;
+        font-size: 90px;
+        font-family: 'Lobster', cursive;
+    }
+}

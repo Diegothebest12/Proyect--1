@@ -1,0 +1,155 @@
+/*Ponemos el color de fondo de la página*/
+*{
+    background-color: black;
+    color: white;
+}
+/*Personalizamos el logo y cabeza de pagina(tamaño del logo, color de fondo,...*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+    color: white;
+}
+h1{
+    background-color: purple;
+}
+#logo{
+    width: 100px;/*tamaño logo*/
+}
+h2{
+    background-color: rgb(164, 112, 14);/*colot de fondo del h2*/
+}
+/*retocamos las imagenes para que queden bien*/
+#N1{
+    height: 170px;
+    width: 160px
+
+}
+#N2{
+    height: 80px;
+}
+#N3{
+    height: 180px;
+    width: 170px 
+}
+.noticias{
+    display:flex;
+
+}
+.noticias aside{
+    width:40%; /*el espacio que ocupará en el ancho para gestionar el espacio entre texto y fotos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.noticias aside img{
+    margin-bottom:9rem;/*para el espacio que habran entre nuestras imagenes en su columna*/
+}
+
+.noticias section{
+    width: 60%;
+}
+/*personalizamos el pie de pagina*/
+.pie{
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(109,109,222);
+    color: white; 
+}
+.pie p{
+    background-color: rgb(109, 109, 222);
+}
+.pie form{
+    background-color: rgb(109, 109, 222);
+}
+
+.pie input{
+    background-color:rgb(38, 38, 87)
+}
+/*Lo anterior es para el formato movil, usamos el término @media para definir el tamaño a un tamaño de ordenador*/
+@media (min-width: 1024px){
+     /*personalizo de la misma manera que antes todo pero adaptado a un formato mayor*/
+    *{
+        background-color: black;
+        color: white;}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: purple;
+        color: white;/*color de texto*/
+        font-size: 30px;/*tamaño de texto*/
+        font-family: 'Dancing Script', cursive;/*tipo de letra*/
+    }
+    h1{
+        background-color: purple;
+    }
+    #logo{
+        height: 170px;
+        width: 200px;
+    }
+    h2{
+        background-color: rgb(164, 112, 14);
+        font-family: 'Lobster', cursive;
+        font-size: 45px;
+    }
+    p{
+        text-align: start;
+        font-size: 35px;
+        font-family: 'Open Sans', sans-serif; 
+    }
+    li{
+        font-size: 30px;
+    }
+    #N1{
+        height: 400px;
+        width: 600px
+    
+    }
+    #N2{
+        height: 280px;
+    }
+    #N3{
+        height: 500px;
+        width: 600px 
+    }
+    .noticias{
+        display:flex;
+    
+    }
+    .noticias aside{
+        width:40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .noticias aside img{
+        margin-bottom:10rem;
+    }
+    
+    .noticias section{
+        width: 60%;
+        text-align: start;
+        font-size: 35px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .pie{
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(109,109,222);
+        color: white; 
+    }
+    .pie p{
+        background-color: rgb(109, 109, 222);
+        font-size: 35px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .pie form{
+        background-color: rgb(109, 109, 222);
+    }
+    .pie input{
+        background-color:rgb(38, 38, 87)
+    }
+}
+/*en los otros ficheros no repetiré las mismas explicaciones pero explicaré las cosas diferentes.*/
